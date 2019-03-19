@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Quiz</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+
+<body>
+<header>
+	<div class="row">
+    	<img src="img/logo.png" class="img-responsive center-block" id="logo">	
+   	</div>
+</header>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="text-center" id="name">Question 1</h1>
+          <div id="question" class="text-center"></div>
+          <a href="q2.html" class="btn btn-primary btn-lg btn-block" id="start">NEXT QUESTION</a>
+        </div>
+    </div>
+</div>
+
+<br/>
+
+<div id="answer"></div>
+<script type="text/javascript">
+localStorage.clear();
+
+//generate random number between 1-10	
+var num = Math.floor(Math.random() * 15) + 1;
+
+var quest;
+var answer;
+var picture;
+// display only one question at random and set the answer equal to the global variable answer
+
+      		if(num===0){
+      		quest="On a standard dartboard, which number lies between 9 and 11??";
+      		answer="14";
+      		
+      		}
+      		if(num===1){
+      		quest="	The heptathlon is made up of how many events?"
+      		answer="7";
+      		
+      		}
+      		if(num===2){
+      		quest="	During which month of the year is the British Open Golf Championship held?"
+      		answer="July";
+      		
+      		} 
+          if(num===3){
+            quest="	Which English football club is television cook Delia Smith connected to?"
+            answer="Norwich";
+            
+          } 
+          if(num===4){
+            quest="In betting, what odds are known as &#39;Pony&#39; or &#39;Macaroni&#39;?"
+            answer="25/1";
+            
+          } 
+          if(num===5){
+            quest="Which national team won the 2011 Rugby Union World Cup?"
+            answer="New Zealand";
+            
+          } 
+          if(num===6){
+            quest="In which city was tennis player Martina Navratilova born?"
+            answer="Prague";
+            
+          } 
+          if(num===7){
+            quest="Who did Fabio Capello replace as England Football team manager in 2008?"
+            answer="Steve McClaren";
+            
+
+          }   
+          if(num===8){
+            quest="Which famous racehorse is buried next to the finishing post of the Aintree Racecourse?"
+            answer="Red Rum";
+            
+
+          } 
+          if(num===9){
+            quest="Which English football club won the 1994 FA Cup?"
+            answer="Man Utd";
+            
+
+          } 
+          if(num===10){
+            quest="Which US&#39;s first names are Eldrick Tont?"
+            answer="Tiger Woods";
+            
+          } 
+		   
+          if(num===11){
+            quest="	Who was the first unseeded tennis player to win the Wimbledon Men&#39;s Finals?"
+            answer="Boris Becker";
+            
+          } 
+          
+          if(num===12){
+            quest="Which English racehorse and Irish Grand National Winner was known as &#39;Dessie&#39;?"
+            answer="Desert Orchid";
+            
+          } 
+           
+          if(num===13){
+            quest="Which American football player was nicknamed &#39;The Juice&#39;?"
+            answer="OJ Simpson";
+            
+          } 
+           
+          if(num===14){
+            quest="Which professional golfer is known as &#39;The Big Easy&#39;?"
+            answer="Ernie Els";
+            
+          } 
+           
+          if(num===15){
+            quest="Who were the runners-up in the 1978 FIFA World Cup?"
+            answer="Netherlands";
+            
+          } 
+
+
+
+
+
+document.getElementById('question').innerHTML = quest; 
+// document.getElementById('answer').innerHTML = answer;  
+// document.getElementById('main_img').src = picture;       
+
+localStorage.setItem('quest1',quest);
+localStorage.setItem('answer1', answer);
+// localStorage.setItem('picture1', picture); 
+
+// alert(picture);
+
+
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

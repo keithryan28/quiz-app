@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Quiz</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<body>
+
+
+<h1>Question 1</h1>
+<div id="question"></div>
+<div id="answer"></div>
+
+<br/>
+
+<button><a href="q2.html">NEXT</a></button>
+
+<script type="text/javascript">
+	
+var num = Math.floor(Math.random() * 6) + 1;
+
+var quest;
+var answer;
+// display only one question at random and set the answer equal to the global variable answer
+
+      		if(num===0){
+      		quest="Who was named man of the match in the All-Ireland hurling final 2006?";
+      		answer="dj";
+      		}
+      		if(num===1){
+      		quest="Who was named man of the match in the All-Ireland hurling final 2007?"
+      		answer="henry";
+      		}
+      		if(num===2){
+      		quest="Who was named man of the match in the All-Ireland hurling final 2008?"
+      		answer="bubbles";
+      		} 
+          if(num===3){
+            quest="Who was named man of the match in the All-Ireland hurling final 2009?"
+            answer="bubbles";
+          } 
+          if(num===4){
+            quest="Who was named man of the match in the All-Ireland hurling final 2010?"
+            answer="bubbles";
+          } 
+          if(num===5){
+            quest="Who was named man of the match in the All-Ireland hurling final 2011?"
+            answer="bubbles";
+          } 
+          if(num===6){
+            quest="Who was named man of the match in the All-Ireland hurling final 2012?"
+            answer="bubbles";
+          } 
+          if(num===7){
+            quest="Who was named man of the match in the All-Ireland hurling final 2013?"
+            answer="bubbles";
+          }   
+          if(num===8){
+            quest="Who was named man of the match in the All-Ireland hurling final 2014?"
+            answer="bubbles";
+          } 
+          if(num===9){
+            quest="Who was named man of the match in the All-Ireland hurling final 2015?"
+            answer="bubbles";
+          } 
+          if(num===10){
+            quest="Who was named man of the match in the All-Ireland hurling final 2015?"
+            answer="bubbles";
+          } 
+
+document.getElementById('question').innerHTML = quest; 
+document.getElementById('answer').innerHTML = answer;         
+
+localStorage.setItem('quest1',quest);
+localStorage.setItem('answer1', answer); 
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

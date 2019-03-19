@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Quiz</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+
+<body>
+
+
+<header>
+  <div class="row">
+      <img src="img/logo.png" class="img-responsive center-block" id="logo">  
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="text-center" id="name">Question 5</h1>
+          <div id="question" class="text-center"></div>
+          <a href="answers.html" class="btn btn-danger btn-lg btn-block" id="start">GET ANSWERS</a>
+        </div>
+    </div>
+</div>
+
+<br/>
+
+<div id="answer"></div>
+
+<script type="text/javascript">
+
+
+//generate random number between 1-10	
+var num = Math.floor(Math.random() * 15) + 1;
+
+var quest;
+var answer;
+var picture;
+// display only one question at random and set the answer equal to the global variable answer
+
+      		if(num===0){
+      		quest="Which famous boxing world champ coined the term &#39;rope-a-dope&#39;?";
+      		answer="Ali";
+      		
+      		}
+      		if(num===1){
+      		quest="How many teams contested the 2003 Rugby World Cup – 16, 20 or 24?"
+      		answer="20";
+      		
+      		}
+      		if(num===2){
+      		quest="Which album front cover by Oasis featured a picture of George Best?"
+      		answer="Definitly Maybe";
+      		
+      		} 
+          if(num===3){
+            quest="How old was Mike Tyson when he first won the World Heavyweight boxing championship?"
+            answer="20";
+            
+          } 
+          if(num===4){
+            quest="What was the first team from Belgium to win the European Cup-Winners Cup?"
+            answer="Anderlect";
+            
+          } 
+          if(num===5){
+            quest="Of which Formula One racing circuit did Ayrton Senna once say: “There are no small accidents on this circuit.”"
+            answer="San Marino";
+            
+          } 
+          if(num===6){
+            quest="What is the first name of horse racing trainer Ted Walsh&#39;s jockey son?"
+            answer="Ruby";
+            
+          } 
+          if(num===7){
+            quest="Who did Fabio Capello replace as England Football team manager in 2008?"
+            answer="Steve McClaren";
+            
+
+          }   
+          if(num===8){
+            quest="Which famous racehorse is buried next to the finishing post of the Aintree Racecourse?"
+            answer="Red Rum";
+            
+
+          } 
+          if(num===9){
+            quest="Which official assesses weights to be carried by racehorses?"
+            answer="Handicapper";
+            
+
+          } 
+          if(num===10){
+            quest="Spain&#39;s Oscar Pereiro hit the headlines in September 2007 after being named the winner of which famous sporting event?"
+            answer="Tour De France";
+            
+          } 
+		   
+          if(num===11){
+            quest="Which was the first tennis Grand Slam event to introduce the innovative Hawk-Eye technology?"
+            answer="US Open";
+            
+          } 
+          
+          if(num===12){
+            quest="Which golfing major title did Zach Johnson win in 2007?"
+            answer="US Masters";
+            
+          } 
+           
+          if(num===13){
+            quest="Which of the martial arts became an official Olympic sport at the 2000 Sydney Olympic games?"
+            answer="Taekwondo";
+            
+          } 
+           
+          if(num===14){
+            quest="During the 2007 World Cup, South Africa&#39;s Herschelle Gibbs set a one-day international record by hitting how many runs off one over: 28, 30, 34 or 36?"
+            answer="36";
+            
+          } 
+           
+          if(num===15){
+            quest="Whose tally of three penalties and a conversion for Argentina helped knock Ireland out of the 2007 Rugby World Cup?"
+            answer="Felipe Contepomi";
+            
+          } 
+
+
+
+
+
+document.getElementById('question').innerHTML = quest; 
+// document.getElementById('answer').innerHTML = answer;  
+// document.getElementById('main_img').src = picture;       
+
+localStorage.setItem('quest5',quest);
+localStorage.setItem('answer5', answer);
+// localStorage.setItem('picture1', picture); 
+
+// alert(picture);
+
+
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

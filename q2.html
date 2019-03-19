@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Quiz</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+
+<body>
+
+
+<header>
+  <div class="row">
+      <img src="img/logo.png" class="img-responsive center-block" id="logo">  
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="text-center" id="name">Question 2</h1>
+          <div id="question" class="text-center"></div>
+          <a href="q3.html" class="btn btn-primary btn-lg btn-block" id="start">NEXT QUESTION</a>
+        </div>
+    </div>
+</div>
+
+<br/>
+
+<div id="answer"></div>
+
+<script type="text/javascript">
+
+
+//generate random number between 1-10	
+var num = Math.floor(Math.random() * 15) + 1;
+
+var quest;
+var answer;
+var picture;
+// display only one question at random and set the answer equal to the global variable answer
+
+      		if(num===0){
+      		quest="Snooker World Champion Dennis Taylor comes from which town in County Tyrone?";
+      		answer="Coalis Island";
+      		
+      		}
+      		if(num===1){
+      		quest="In which county would you find Gowran Park racecourse?"
+      		answer="Kilkenny";
+      		
+      		}
+      		if(num===2){
+      		quest="Ruud van Nistelrooy has how many Champions League goals? 36, 46 or 56"
+      		answer="56";
+      		
+      		} 
+          if(num===3){
+            quest="Which Irish golfer won the PGA championship and The Open in 2008?"
+            answer="P. Harrington";
+            
+          } 
+          if(num===4){
+            quest="What is Arkle, from which the legendary Irish racehorse took its name?"
+            answer="A Scottish Mountain";
+            
+          } 
+          if(num===5){
+            quest="Adolf Dassler founded which sports company in 1948?"
+            answer="Adidas";
+            
+          } 
+          if(num===6){
+            quest="In 2006, Middlesbrough football boss Gareth Southgate described which Manchester United player as a &#39;serial diver&#39;?"
+            answer="Ronaldo";
+            
+          } 
+          if(num===7){
+            quest="Which Italian player did Zinedine Zidane headbutt with ten minutes left of extra time during the 2006 World Cup"
+            answer="Marco Materazzi";
+            
+
+          }   
+          if(num===8){
+            quest="How many hurdles would a hurdler jump over in a women&#39;s 100 metres hurdle sprint?"
+            answer="10";
+            
+
+          } 
+          if(num===9){
+            quest="What &#39;C&#39; is the name of the seven minutes of play in a game of polo?"
+            answer="Chukkas";
+            
+
+          } 
+          if(num===10){
+            quest="Which colourful football coach compared his players to eggs in an omelette in September 2007?"
+            answer="Mourinho";
+            
+          } 
+		   
+          if(num===11){
+            quest="Early in his career, Roger Federer considered turning professional in which other sport besides tennis?"
+            answer="Soccer";
+            
+          } 
+          
+          if(num===12){
+            quest="Moving clockwise around a dartboard what comes next after 6?"
+            answer="10";
+            
+          } 
+           
+          if(num===13){
+            quest="In which city were the 1996 Olympics held?"
+            answer="Atlanta";
+            
+          } 
+           
+          if(num===14){
+            quest="In what year was the inaugural Rugby World Cup held: 1967, 1977 or 1987?"
+            answer="1987";
+            
+          } 
+           
+          if(num===15){
+            quest="The first ever match played by the English national football team at the new Wembley Stadium saw them draw 1-1 in an international friendly against which side?"
+            answer="Brazil";
+            
+          } 
+
+
+
+
+
+document.getElementById('question').innerHTML = quest; 
+// document.getElementById('answer').innerHTML = answer;  
+// document.getElementById('main_img').src = picture;       
+
+localStorage.setItem('quest2',quest);
+localStorage.setItem('answer2', answer);
+// localStorage.setItem('picture1', picture); 
+
+// alert(picture);
+
+
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
